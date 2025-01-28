@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: 'Nunito';
+	vertical-align: baseline;
+}
+
+body {
+    background-color: #022B3A;
+    background-image: url(../html/) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 30px;    
+}
+
+.title {
+    color: #080b15;
+    font-weight: 850;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    flex-direction: column;
+}
+
+.text {
+    line-break: auto;
+    color: #E1E5F2;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.btn-container {
+    width: 100%;
+    margin-left: 25.5%;
+}
+
+.btn {
+    background-color: #1F7A8C;
+    color: #FFFFFF;
+    padding: 11px 20px 11px 20px;
+    border-radius: 5px;
+    transition: all .175s;
+}
+
+.btn:hover {
+    background-color: #BFDBF7;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    width: 60%;
+    text-align: left;
+}
+
+.text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.btn-container {
+    margin-right: 120px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #17324f;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #1b1f24;
+}
+
+.gif-container {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-container img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.title-image {
+    display: block;
+    margin-top: 1px;
+    max-width: 5px; /* ajuste o tamanho conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o GIF */
+.title-gif {
+    display: block;
+    margin: 20px auto;  /* Isso vai colocar o GIF bem abaixo do título e centralizado */
+    max-width: 50%;     /* Ajuste o tamanho do GIF conforme necessário */
+}
+
+/* Alinhando o botão com a imagem */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilizando o botão */
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Estilizando o conteúdo do texto */
+.text-container {
+    margin-top: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+

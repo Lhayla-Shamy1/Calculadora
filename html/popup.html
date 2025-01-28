@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/popup.css">
+    <title> Calculadora Idades Geológicas</title>
+</head>
+<body>
+    <main>
+        <div class="texto">
+
+            <h1 class="titulo"><span class="bold">Calculadora de Idades Geológicas</span></h1>
+            
+            <div class="img">
+                <img src="../html/R.jpg" alt="Escala geológica do tempo">
+            </div>
+        </div>
+        
+        <div class="pop">
+            <button onclick="showPopup()">Calculadora verdadeira</button>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup" id="popup">
+            <h2>Conversão de Idades Geológicas</h2>
+            <div class="calculadora">
+                <div class="input">
+                    <label>Milhões de anos atrás (Ma):</label>
+                    <input type="number" id='idade'>
+                </div>
+                <button id='calcular'>Calcular</button>
+            </div>
+            <div class="resultado">
+                <div class="result" id='resultado'></div>
+            </div>
+            <div class="fechar">
+                <button onclick="closePopup()">Fechar</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('popupOverlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popupOverlay').style.display = 'none';
+        }
+
+        document.getElementById('calcular').addEventListener('click', function() {
+            const idade = +document.getElementById('idade').value;
+            const resultado = document.getElementById('resultado');
+            let mensagem = "";
+            
+            if (idade >= 0 && idade < 66) {
+                mensagem = `A idade de ${idade} Ma pertence à Era Cenozoica.`;
+            } else if (idade >= 66 && idade < 252) {
+                mensagem = `A idade de ${idade} Ma pertence à Era Mesozoica.`;
+            } else if (idade >= 252 && idade < 541) {
+                mensagem = `A idade de ${idade} Ma pertence à Era Paleozoica.`;
+            } else if (idade >= 541 && idade < 2500) {
+                mensagem = `A idade de ${idade} Ma pertence ao Éon Proterozoico.`;
+            } else if (idade >= 2500 && idade < 4000) {
+                mensagem = `A idade de ${idade} Ma pertence ao Éon Arqueano.`;
+            } else if (idade >= 4000 && idade <= 4600) {
+                mensagem = `A idade de ${idade} Ma pertence ao Éon Hadeano.`;
+            } else {
+                mensagem = "Valor inválido. Insira um número entre 0 e 4600.";
+            }
+            
+            resultado.textContent = mensagem;
+        });
+    </script>
+</body>
+</html>
